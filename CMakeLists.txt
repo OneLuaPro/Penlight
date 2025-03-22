@@ -94,7 +94,7 @@ set(INSTALL_TOP_LDIR
   ${INSTALL_DATAROOTDIR}/lua/${liblua_VERSION_MAJOR}.${liblua_VERSION_MINOR})
 
 # ------------------------------------------------------------------------------
-# Install lua-file and docs
+# Install library, docs, and tests
 install(DIRECTORY lua/pl DESTINATION ${INSTALL_TOP_LDIR})
 install(DIRECTORY docs/ DESTINATION ${INSTALL_DOCDIR}) # "/" omits leading dir
-install(DIRECTORY docs/tests DESTINATION ${INSTALL_DOCDIR})
+install(DIRECTORY tests DESTINATION ${INSTALL_DOCDIR})
