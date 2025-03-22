@@ -95,6 +95,6 @@ set(INSTALL_TOP_LDIR
 
 # ------------------------------------------------------------------------------
 # Install lua-file and docs
-install(FILES lua/pl DESTINATION ${INSTALL_TOP_LDIR})
+install(DIRECTORY lua/pl DESTINATION ${INSTALL_TOP_LDIR})
 install(DIRECTORY docs/ DESTINATION ${INSTALL_DOCDIR}) # "/" omits leading dir
 install(DIRECTORY docs/tests DESTINATION ${INSTALL_DOCDIR})
