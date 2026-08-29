@@ -6,6 +6,15 @@ deprecation policy.
 
 see [CONTRIBUTING.md](CONTRIBUTING.md#release-instructions-for-a-new-version) for release instructions
 
+## x.x.x (unreleased)
+ - fix(dir): `walk` followed symlinks even when `follow_links=false`, and on
+   Windows ignored `follow_links` altogether and always followed symlinks
+ - fix(dir): `rmtree` deleted subdirectories inside symlink targets due to
+   the above, and on Windows failed to delete directory symlinks with a
+   "permission denied" error
+ - fix: tablex.mapn could take a long time if no args provided
+   [#521](https://github.com/lunarmodules/Penlight/pull/521)
+
 ## 1.15.0 (2026-Jan-4)
  - docs: many (small) documentation updates and fixes
  - feat: added support for Lua 5.5
